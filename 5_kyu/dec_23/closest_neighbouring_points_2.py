@@ -22,7 +22,7 @@ closest_points3D(listPointsII) ------> [20, [[(1, 2, 17), (1, 4, 16)]], 2.23607]
 """
 
 def get_distance(x_points, y_points):
-    return sum([abs(x_points[i] - y_points[i]) ** 2 for i in range(3)]) ** 0.5
+    return sum([(x_points[i] - y_points[i]) ** 2 for i in range(3)]) ** 0.5
 
 def closest_points_3d(points):
     distance, pairs = float("inf"), []

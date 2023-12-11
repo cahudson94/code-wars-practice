@@ -10,4 +10,4 @@ Input coordinates fit in range −50⩽x,y⩽50. Tests compare expected result a
 
 def distance_between_points(a, b):
 	"""Use pythagorean theorum to find distance between two points."""
-    return (abs(a.x - b.x) ** 2 + abs(a.y - b.y) ** 2) ** 0.5
+    return ((a.x - b.x) ** 2 + (a.y - b.y) ** 2) ** 0.5
